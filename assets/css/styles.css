@@ -63,6 +63,23 @@ a {
     max-width: calc(100% - 48px);
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
+/* Ngắt cho chữ tự xuống hàng nếu không sẽ chọc thẳng nội dung làm to ra */
+.break-all {
+    word-break: break-all;
+}
+
 /* ---------------------------------------------------------Header----------------------------------------------------------------------- */
 .header {
     background: #fffcf4;
